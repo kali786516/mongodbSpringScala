@@ -7,10 +7,10 @@ import org.springframework.data.mongodb.core.mapping.Document
 class Application {
 
   @Id
-  private var id = _
-  private var name = _
-  private var description = _
-  private var owner = _
+  private var id:String = _
+  private var name:String = _
+  private var description:String = _
+  private var owner:String = _
 
   def this(id: String, name: String, owner: String, description: String) {
     this()

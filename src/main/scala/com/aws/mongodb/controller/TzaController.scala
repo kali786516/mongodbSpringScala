@@ -3,9 +3,7 @@ package com.aws.mongodb.controller
 import com.aws.mongodb.model.Application
 import com.aws.mongodb.model.Release
 import com.aws.mongodb.model.Ticket
-import com.aws.mongodb.repositories.ApplicationRepository
-import com.aws.mongodb.repositories.ReleaseRepository
-import com.aws.mongodb.repositories.TicketRepository
+import com.aws.mongodb.repositories.{ApplicationRepository, ReleaseRepository, TicketRepository}
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.web.bind.annotation._
 import java.util
@@ -23,7 +21,7 @@ class TzaController {
   private var releaseRepository:ReleaseRepository = _
 
   @Autowired
-  private val ticketRepository:TicketRepository = _
+  private var ticketRepository:TicketRepository = _
 
   // ************** Methods for Applications *************************
   @RequestMapping(value = Array("/applications"), method = Array(RequestMethod.GET))

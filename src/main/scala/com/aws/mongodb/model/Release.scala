@@ -12,11 +12,11 @@ import org.springframework.data.mongodb.core.mapping.Document
 class Release {
 
   @Id
-  private var id = _
-  private var name = _
-  private var description = _
-  private var tickets = _
-  private var releaseDate = _
+  private var id:String = _
+  private var name:String = _
+  private var description:String = _
+  private var tickets:util.List[Ticket] = _
+  private var releaseDate:java.time.LocalDate = _
 
 
 

@@ -8,11 +8,11 @@ import org.springframework.data.mongodb.core.mapping.Document
 class Ticket {
 
   @Id
-  private var id = _
-  private var title = _
-  private var description = _
-  private var appId = _
-  private var status = _
+  private var id : String = _
+  private var title:String = _
+  private var description:String = _
+  private var appId:String = _
+  private var status:String = _
 
   def this(title: String, description: String, appId: String, status: String) {
     this()
